@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autoclicker));
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.num_clicksPerSecond = new System.Windows.Forms.NumericUpDown();
@@ -36,12 +37,12 @@
             this.btn_clickParticularly = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.num_xValue = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.num_yValue = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_setCursorPosition = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.num_xValue = new System.Windows.Forms.NumericUpDown();
-            this.num_yValue = new System.Windows.Forms.NumericUpDown();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_clicksPerSecond)).BeginInit();
             this.panel1.SuspendLayout();
@@ -49,9 +50,9 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_xValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_yValue)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -156,6 +157,42 @@
             this.splitContainer1.SplitterDistance = 137;
             this.splitContainer1.TabIndex = 0;
             // 
+            // num_xValue
+            // 
+            this.num_xValue.Dock = System.Windows.Forms.DockStyle.Top;
+            this.num_xValue.Location = new System.Drawing.Point(0, 23);
+            this.num_xValue.Name = "num_xValue";
+            this.num_xValue.Size = new System.Drawing.Size(137, 20);
+            this.num_xValue.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "X Value";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // num_yValue
+            // 
+            this.num_yValue.Dock = System.Windows.Forms.DockStyle.Top;
+            this.num_yValue.Location = new System.Drawing.Point(0, 23);
+            this.num_yValue.Name = "num_yValue";
+            this.num_yValue.Size = new System.Drawing.Size(143, 20);
+            this.num_yValue.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 23);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Y Value";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btn_setCursorPosition
             // 
             this.btn_setCursorPosition.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -180,42 +217,6 @@
             this.panel3.Size = new System.Drawing.Size(384, 68);
             this.panel3.TabIndex = 8;
             // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "X Value";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 23);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Y Value";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // num_xValue
-            // 
-            this.num_xValue.Dock = System.Windows.Forms.DockStyle.Top;
-            this.num_xValue.Location = new System.Drawing.Point(0, 23);
-            this.num_xValue.Name = "num_xValue";
-            this.num_xValue.Size = new System.Drawing.Size(137, 20);
-            this.num_xValue.TabIndex = 1;
-            // 
-            // num_yValue
-            // 
-            this.num_yValue.Dock = System.Windows.Forms.DockStyle.Top;
-            this.num_yValue.Location = new System.Drawing.Point(0, 23);
-            this.num_yValue.Name = "num_yValue";
-            this.num_yValue.Size = new System.Drawing.Size(143, 20);
-            this.num_yValue.TabIndex = 2;
-            // 
             // Autoclicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,9 +229,11 @@
             this.Controls.Add(this.btn_clickAtMouse);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Autoclicker";
             this.Padding = new System.Windows.Forms.Padding(50, 0, 50, 0);
-            this.Text = "Autoclicker";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " Autoclicker";
             this.Load += new System.EventHandler(this.Autoclicker_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.num_clicksPerSecond)).EndInit();
@@ -239,9 +242,9 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.num_xValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_yValue)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
