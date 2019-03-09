@@ -50,11 +50,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLayoutForm.Designer.cs">
+      <DependentUpon>AddLayoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClickerPosition.cs" />
+    <Compile Include="DBLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DBLayoutPanel.Designer.cs">
+      <DependentUpon>DBLayoutPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutCollection.cs" />
     <Compile Include="Main Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Form.Designer.cs">
       <DependentUpon>Main Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pointer Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pointer Form.Designer.cs">
+      <DependentUpon>Pointer Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,8 +84,14 @@
     <Compile Include="TimerForm.Designer.cs">
       <DependentUpon>TimerForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddLayoutForm.resx">
+      <DependentUpon>AddLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Form.resx">
       <DependentUpon>Main Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pointer Form.resx">
+      <DependentUpon>Pointer Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TimerForm.resx">
       <DependentUpon>TimerForm.cs</DependentUpon>
@@ -94,7 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Executable Icon.ico" />
-    <Content Include="Mouse Image.ico" />
+    <None Include="Resources\Crosshair.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

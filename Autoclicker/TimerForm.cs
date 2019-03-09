@@ -13,16 +13,22 @@ namespace Autoclicker
 {
     public partial class TimerForm : Form
     {
-        public int number = 5;
+        public int number = 3;
 
         public TimerForm()
         {
             InitializeComponent();
-            Location = new Point(50, 50);
+
+            // Treat as non-separate form to the main form
+            ShowInTaskbar = false;
         }
 
         private void TimerForm_Shown(object sender, EventArgs e)
         {
+            // Set desktop location
+            Location = new Point(50, 50);
+
+            // Start making the timer go down
             while (number > 0)
             {
                 lbl_number.Text = number.ToString();
@@ -30,6 +36,8 @@ namespace Autoclicker
                 Thread.Sleep(1000);
                 number--;
             }
+
+            // Close when timer has reached 0
             Close();
         }
     }
