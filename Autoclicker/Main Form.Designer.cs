@@ -37,7 +37,7 @@
             this.btn_clickAtMouse = new System.Windows.Forms.Button();
             this.btn_clickParticularly = new System.Windows.Forms.Button();
             this.pnl_coordinates = new System.Windows.Forms.Panel();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.splt_coordinates = new System.Windows.Forms.SplitContainer();
             this.num_xValue = new System.Windows.Forms.NumericUpDown();
             this.lbl_xValue = new System.Windows.Forms.Label();
             this.num_yValue = new System.Windows.Forms.NumericUpDown();
@@ -60,10 +60,10 @@
             this.pnl_cps.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_clicksPerSecond)).BeginInit();
             this.pnl_coordinates.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splt_coordinates)).BeginInit();
+            this.splt_coordinates.Panel1.SuspendLayout();
+            this.splt_coordinates.Panel2.SuspendLayout();
+            this.splt_coordinates.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_xValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_yValue)).BeginInit();
             this.panel3.SuspendLayout();
@@ -169,7 +169,7 @@
             // 
             // pnl_coordinates
             // 
-            this.pnl_coordinates.Controls.Add(this.splitContainer2);
+            this.pnl_coordinates.Controls.Add(this.splt_coordinates);
             this.pnl_coordinates.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_coordinates.Location = new System.Drawing.Point(0, 205);
             this.pnl_coordinates.Margin = new System.Windows.Forms.Padding(4);
@@ -178,26 +178,27 @@
             this.pnl_coordinates.Size = new System.Drawing.Size(405, 106);
             this.pnl_coordinates.TabIndex = 12;
             // 
-            // splitContainer2
+            // splt_coordinates
             // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(67, 25);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
-            this.splitContainer2.Name = "splitContainer2";
+            this.splt_coordinates.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splt_coordinates.IsSplitterFixed = true;
+            this.splt_coordinates.Location = new System.Drawing.Point(67, 25);
+            this.splt_coordinates.Margin = new System.Windows.Forms.Padding(4);
+            this.splt_coordinates.Name = "splt_coordinates";
             // 
-            // splitContainer2.Panel1
+            // splt_coordinates.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.num_xValue);
-            this.splitContainer2.Panel1.Controls.Add(this.lbl_xValue);
+            this.splt_coordinates.Panel1.Controls.Add(this.num_xValue);
+            this.splt_coordinates.Panel1.Controls.Add(this.lbl_xValue);
             // 
-            // splitContainer2.Panel2
+            // splt_coordinates.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.num_yValue);
-            this.splitContainer2.Panel2.Controls.Add(this.lbl_yValue);
-            this.splitContainer2.Size = new System.Drawing.Size(271, 56);
-            this.splitContainer2.SplitterDistance = 129;
-            this.splitContainer2.SplitterWidth = 5;
-            this.splitContainer2.TabIndex = 0;
+            this.splt_coordinates.Panel2.Controls.Add(this.num_yValue);
+            this.splt_coordinates.Panel2.Controls.Add(this.lbl_yValue);
+            this.splt_coordinates.Size = new System.Drawing.Size(271, 56);
+            this.splt_coordinates.SplitterDistance = 129;
+            this.splt_coordinates.SplitterWidth = 5;
+            this.splt_coordinates.TabIndex = 0;
             // 
             // num_xValue
             // 
@@ -273,6 +274,7 @@
             // splt_formSplitter
             // 
             this.splt_formSplitter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splt_formSplitter.IsSplitterFixed = true;
             this.splt_formSplitter.Location = new System.Drawing.Point(67, 90);
             this.splt_formSplitter.Name = "splt_formSplitter";
             // 
@@ -318,6 +320,7 @@
             // 
             this.splt_tableTitle12Against3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splt_tableTitle12Against3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splt_tableTitle12Against3.IsSplitterFixed = true;
             this.splt_tableTitle12Against3.Location = new System.Drawing.Point(0, 0);
             this.splt_tableTitle12Against3.Name = "splt_tableTitle12Against3";
             // 
@@ -337,6 +340,7 @@
             // 
             this.splt_tableTitle1Against2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splt_tableTitle1Against2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splt_tableTitle1Against2.IsSplitterFixed = true;
             this.splt_tableTitle1Against2.Location = new System.Drawing.Point(0, 0);
             this.splt_tableTitle1Against2.Name = "splt_tableTitle1Against2";
             // 
@@ -412,6 +416,7 @@
             this.tbl_xAndY.Name = "tbl_xAndY";
             this.tbl_xAndY.RowCount = 2;
             this.tbl_xAndY.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tbl_xAndY.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbl_xAndY.Size = new System.Drawing.Size(445, 365);
             this.tbl_xAndY.TabIndex = 6;
             // 
@@ -445,7 +450,7 @@
             this.lbl_xValues.Text = "X Values";
             this.lbl_xValues.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Autoclicker_Form
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -456,7 +461,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(500, 47);
-            this.Name = "Autoclicker_Form";
+            this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(67, 0, 67, 20);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Autoclicker";
@@ -465,10 +470,10 @@
             this.pnl_cps.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.num_clicksPerSecond)).EndInit();
             this.pnl_coordinates.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
+            this.splt_coordinates.Panel1.ResumeLayout(false);
+            this.splt_coordinates.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splt_coordinates)).EndInit();
+            this.splt_coordinates.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.num_xValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_yValue)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -500,7 +505,7 @@
         private System.Windows.Forms.Button btn_clickAtMouse;
         private System.Windows.Forms.Button btn_clickParticularly;
         private System.Windows.Forms.Panel pnl_coordinates;
-        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.SplitContainer splt_coordinates;
         private System.Windows.Forms.NumericUpDown num_xValue;
         private System.Windows.Forms.Label lbl_xValue;
         private System.Windows.Forms.NumericUpDown num_yValue;

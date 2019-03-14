@@ -51,6 +51,8 @@ namespace Autoclicker
             splt_formSplitter.SplitterDistance = (splt_formSplitter.Width - splt_formSplitter.SplitterWidth) / 2;
             splt_tableTitle12Against3.SplitterDistance = splt_tableTitle12Against3.Width - 100;
             splt_tableTitle1Against2.SplitterDistance = 75;
+            splt_coordinates.SplitterWidth = 5;
+            splt_coordinates.SplitterDistance = (splt_coordinates.Width - splt_coordinates.SplitterWidth) / 2;
 
             // Set co-ordinate max range
             num_xValue.Maximum = 100000;
