@@ -65,10 +65,9 @@ namespace Autoclicker
         public void ClickMouseRepeatedly(bool atMouse)
         {
             // Set up timer
-            Timer = new System.Timers.Timer();
+            Timer = new System.Timers.Timer((int)num_clicksPerSecond.Value);
             Timer.AutoReset = true;
             Timer.Enabled = true;
-            Timer.Interval = 1000 / (int)num_clicksPerSecond.Value;
 
             // Choose specific methods depending on chosen option
             if (atMouse)

@@ -87,10 +87,9 @@
             // 
             this.lbl_Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_Title.Font = new System.Drawing.Font("OCR A Extended", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.Location = new System.Drawing.Point(67, 0);
-            this.lbl_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Title.Location = new System.Drawing.Point(50, 0);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(854, 90);
+            this.lbl_Title.Size = new System.Drawing.Size(641, 73);
             this.lbl_Title.TabIndex = 1;
             this.lbl_Title.Text = "Autoclicker";
             this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,17 +101,15 @@
             this.pnl_cps.Controls.Add(this.lbl_cps);
             this.pnl_cps.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_cps.Location = new System.Drawing.Point(0, 0);
-            this.pnl_cps.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_cps.Name = "pnl_cps";
-            this.pnl_cps.Padding = new System.Windows.Forms.Padding(67, 12, 67, 25);
-            this.pnl_cps.Size = new System.Drawing.Size(405, 81);
+            this.pnl_cps.Padding = new System.Windows.Forms.Padding(50, 10, 50, 20);
+            this.pnl_cps.Size = new System.Drawing.Size(303, 81);
             this.pnl_cps.TabIndex = 9;
             // 
             // num_clicksPerSecond
             // 
             this.num_clicksPerSecond.Dock = System.Windows.Forms.DockStyle.Top;
-            this.num_clicksPerSecond.Location = new System.Drawing.Point(67, 34);
-            this.num_clicksPerSecond.Margin = new System.Windows.Forms.Padding(4);
+            this.num_clicksPerSecond.Location = new System.Drawing.Point(50, 41);
             this.num_clicksPerSecond.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -124,10 +121,10 @@
             0,
             0});
             this.num_clicksPerSecond.Name = "num_clicksPerSecond";
-            this.num_clicksPerSecond.Size = new System.Drawing.Size(271, 22);
+            this.num_clicksPerSecond.Size = new System.Drawing.Size(203, 20);
             this.num_clicksPerSecond.TabIndex = 3;
             this.num_clicksPerSecond.Value = new decimal(new int[] {
-            1,
+            1000,
             0,
             0,
             0});
@@ -135,21 +132,19 @@
             // lbl_cps
             // 
             this.lbl_cps.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_cps.Location = new System.Drawing.Point(67, 12);
-            this.lbl_cps.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_cps.Location = new System.Drawing.Point(50, 10);
             this.lbl_cps.Name = "lbl_cps";
-            this.lbl_cps.Size = new System.Drawing.Size(271, 22);
+            this.lbl_cps.Size = new System.Drawing.Size(203, 31);
             this.lbl_cps.TabIndex = 2;
-            this.lbl_cps.Text = "Clicks per second";
+            this.lbl_cps.Text = "The interval time between each click (Milliseconds)";
             this.lbl_cps.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_clickAtMouse
             // 
             this.btn_clickAtMouse.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_clickAtMouse.Location = new System.Drawing.Point(0, 81);
-            this.btn_clickAtMouse.Margin = new System.Windows.Forms.Padding(4);
             this.btn_clickAtMouse.Name = "btn_clickAtMouse";
-            this.btn_clickAtMouse.Size = new System.Drawing.Size(405, 62);
+            this.btn_clickAtMouse.Size = new System.Drawing.Size(303, 50);
             this.btn_clickAtMouse.TabIndex = 10;
             this.btn_clickAtMouse.Text = "Click wherever the mouse is (F8)";
             this.btn_clickAtMouse.UseVisualStyleBackColor = true;
@@ -158,10 +153,9 @@
             // btn_clickParticularly
             // 
             this.btn_clickParticularly.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_clickParticularly.Location = new System.Drawing.Point(0, 143);
-            this.btn_clickParticularly.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_clickParticularly.Location = new System.Drawing.Point(0, 131);
             this.btn_clickParticularly.Name = "btn_clickParticularly";
-            this.btn_clickParticularly.Size = new System.Drawing.Size(405, 62);
+            this.btn_clickParticularly.Size = new System.Drawing.Size(303, 50);
             this.btn_clickParticularly.TabIndex = 11;
             this.btn_clickParticularly.Text = "Click in a certain position (F7)";
             this.btn_clickParticularly.UseVisualStyleBackColor = true;
@@ -171,19 +165,17 @@
             // 
             this.pnl_coordinates.Controls.Add(this.splt_coordinates);
             this.pnl_coordinates.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_coordinates.Location = new System.Drawing.Point(0, 205);
-            this.pnl_coordinates.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_coordinates.Location = new System.Drawing.Point(0, 181);
             this.pnl_coordinates.Name = "pnl_coordinates";
-            this.pnl_coordinates.Padding = new System.Windows.Forms.Padding(67, 25, 67, 25);
-            this.pnl_coordinates.Size = new System.Drawing.Size(405, 106);
+            this.pnl_coordinates.Padding = new System.Windows.Forms.Padding(50, 20, 50, 20);
+            this.pnl_coordinates.Size = new System.Drawing.Size(303, 86);
             this.pnl_coordinates.TabIndex = 12;
             // 
             // splt_coordinates
             // 
             this.splt_coordinates.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splt_coordinates.IsSplitterFixed = true;
-            this.splt_coordinates.Location = new System.Drawing.Point(67, 25);
-            this.splt_coordinates.Margin = new System.Windows.Forms.Padding(4);
+            this.splt_coordinates.Location = new System.Drawing.Point(50, 20);
             this.splt_coordinates.Name = "splt_coordinates";
             // 
             // splt_coordinates.Panel1
@@ -195,18 +187,16 @@
             // 
             this.splt_coordinates.Panel2.Controls.Add(this.num_yValue);
             this.splt_coordinates.Panel2.Controls.Add(this.lbl_yValue);
-            this.splt_coordinates.Size = new System.Drawing.Size(271, 56);
-            this.splt_coordinates.SplitterDistance = 129;
-            this.splt_coordinates.SplitterWidth = 5;
+            this.splt_coordinates.Size = new System.Drawing.Size(203, 46);
+            this.splt_coordinates.SplitterDistance = 96;
             this.splt_coordinates.TabIndex = 0;
             // 
             // num_xValue
             // 
             this.num_xValue.Dock = System.Windows.Forms.DockStyle.Top;
-            this.num_xValue.Location = new System.Drawing.Point(0, 28);
-            this.num_xValue.Margin = new System.Windows.Forms.Padding(4);
+            this.num_xValue.Location = new System.Drawing.Point(0, 23);
             this.num_xValue.Name = "num_xValue";
-            this.num_xValue.Size = new System.Drawing.Size(129, 22);
+            this.num_xValue.Size = new System.Drawing.Size(96, 20);
             this.num_xValue.TabIndex = 1;
             this.num_xValue.ValueChanged += new System.EventHandler(this.num_xValue_ValueChanged);
             this.num_xValue.Enter += new System.EventHandler(this.num_xValue_Enter);
@@ -216,9 +206,8 @@
             // 
             this.lbl_xValue.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_xValue.Location = new System.Drawing.Point(0, 0);
-            this.lbl_xValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_xValue.Name = "lbl_xValue";
-            this.lbl_xValue.Size = new System.Drawing.Size(129, 28);
+            this.lbl_xValue.Size = new System.Drawing.Size(96, 23);
             this.lbl_xValue.TabIndex = 0;
             this.lbl_xValue.Text = "X Value";
             this.lbl_xValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,10 +215,9 @@
             // num_yValue
             // 
             this.num_yValue.Dock = System.Windows.Forms.DockStyle.Top;
-            this.num_yValue.Location = new System.Drawing.Point(0, 28);
-            this.num_yValue.Margin = new System.Windows.Forms.Padding(4);
+            this.num_yValue.Location = new System.Drawing.Point(0, 23);
             this.num_yValue.Name = "num_yValue";
-            this.num_yValue.Size = new System.Drawing.Size(137, 22);
+            this.num_yValue.Size = new System.Drawing.Size(103, 20);
             this.num_yValue.TabIndex = 2;
             this.num_yValue.ValueChanged += new System.EventHandler(this.num_yValue_ValueChanged);
             this.num_yValue.Enter += new System.EventHandler(this.num_yValue_Enter);
@@ -239,9 +227,8 @@
             // 
             this.lbl_yValue.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_yValue.Location = new System.Drawing.Point(0, 0);
-            this.lbl_yValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_yValue.Name = "lbl_yValue";
-            this.lbl_yValue.Size = new System.Drawing.Size(137, 28);
+            this.lbl_yValue.Size = new System.Drawing.Size(103, 23);
             this.lbl_yValue.TabIndex = 1;
             this.lbl_yValue.Text = "Y Value";
             this.lbl_yValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,21 +238,20 @@
             this.panel3.AutoSize = true;
             this.panel3.Controls.Add(this.btn_setCursorPosition);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 311);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(0, 267);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
-            this.panel3.Size = new System.Drawing.Size(405, 72);
+            this.panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.panel3.Size = new System.Drawing.Size(303, 59);
             this.panel3.TabIndex = 14;
             // 
             // btn_setCursorPosition
             // 
             this.btn_setCursorPosition.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_setCursorPosition.Location = new System.Drawing.Point(62, 0);
-            this.btn_setCursorPosition.Margin = new System.Windows.Forms.Padding(67, 4, 67, 4);
-            this.btn_setCursorPosition.MinimumSize = new System.Drawing.Size(133, 0);
+            this.btn_setCursorPosition.Location = new System.Drawing.Point(45, 0);
+            this.btn_setCursorPosition.Margin = new System.Windows.Forms.Padding(50, 3, 50, 3);
+            this.btn_setCursorPosition.MinimumSize = new System.Drawing.Size(100, 0);
             this.btn_setCursorPosition.Name = "btn_setCursorPosition";
-            this.btn_setCursorPosition.Size = new System.Drawing.Size(267, 50);
+            this.btn_setCursorPosition.Size = new System.Drawing.Size(200, 41);
             this.btn_setCursorPosition.TabIndex = 7;
             this.btn_setCursorPosition.Text = "Set co-ordinates to mouse position";
             this.btn_setCursorPosition.UseVisualStyleBackColor = true;
@@ -275,7 +261,8 @@
             // 
             this.splt_formSplitter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splt_formSplitter.IsSplitterFixed = true;
-            this.splt_formSplitter.Location = new System.Drawing.Point(67, 90);
+            this.splt_formSplitter.Location = new System.Drawing.Point(50, 73);
+            this.splt_formSplitter.Margin = new System.Windows.Forms.Padding(2);
             this.splt_formSplitter.Name = "splt_formSplitter";
             // 
             // splt_formSplitter.Panel1
@@ -291,16 +278,18 @@
             // 
             this.splt_formSplitter.Panel2.Controls.Add(this.tbl_xAndY);
             this.splt_formSplitter.Panel2.Controls.Add(this.pnl_tableTitle);
-            this.splt_formSplitter.Size = new System.Drawing.Size(854, 440);
-            this.splt_formSplitter.SplitterDistance = 405;
+            this.splt_formSplitter.Size = new System.Drawing.Size(641, 367);
+            this.splt_formSplitter.SplitterDistance = 303;
+            this.splt_formSplitter.SplitterWidth = 3;
             this.splt_formSplitter.TabIndex = 2;
             // 
             // btn_addValue
             // 
             this.btn_addValue.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_addValue.Location = new System.Drawing.Point(0, 383);
+            this.btn_addValue.Location = new System.Drawing.Point(0, 326);
+            this.btn_addValue.Margin = new System.Windows.Forms.Padding(2);
             this.btn_addValue.Name = "btn_addValue";
-            this.btn_addValue.Size = new System.Drawing.Size(405, 50);
+            this.btn_addValue.Size = new System.Drawing.Size(303, 41);
             this.btn_addValue.TabIndex = 0;
             this.btn_addValue.Text = "Add Co-ordinate";
             this.btn_addValue.UseVisualStyleBackColor = true;
@@ -311,9 +300,10 @@
             this.pnl_tableTitle.Controls.Add(this.splt_tableTitle12Against3);
             this.pnl_tableTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_tableTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnl_tableTitle.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_tableTitle.Name = "pnl_tableTitle";
-            this.pnl_tableTitle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 25);
-            this.pnl_tableTitle.Size = new System.Drawing.Size(445, 75);
+            this.pnl_tableTitle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.pnl_tableTitle.Size = new System.Drawing.Size(335, 61);
             this.pnl_tableTitle.TabIndex = 5;
             // 
             // splt_tableTitle12Against3
@@ -322,6 +312,7 @@
             this.splt_tableTitle12Against3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splt_tableTitle12Against3.IsSplitterFixed = true;
             this.splt_tableTitle12Against3.Location = new System.Drawing.Point(0, 0);
+            this.splt_tableTitle12Against3.Margin = new System.Windows.Forms.Padding(2);
             this.splt_tableTitle12Against3.Name = "splt_tableTitle12Against3";
             // 
             // splt_tableTitle12Against3.Panel1
@@ -332,8 +323,9 @@
             // 
             this.splt_tableTitle12Against3.Panel2.Controls.Add(this.btn_delLayout);
             this.splt_tableTitle12Against3.Panel2.Controls.Add(this.cBo_layout);
-            this.splt_tableTitle12Against3.Size = new System.Drawing.Size(445, 50);
-            this.splt_tableTitle12Against3.SplitterDistance = 315;
+            this.splt_tableTitle12Against3.Size = new System.Drawing.Size(335, 41);
+            this.splt_tableTitle12Against3.SplitterDistance = 208;
+            this.splt_tableTitle12Against3.SplitterWidth = 3;
             this.splt_tableTitle12Against3.TabIndex = 0;
             // 
             // splt_tableTitle1Against2
@@ -342,6 +334,7 @@
             this.splt_tableTitle1Against2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splt_tableTitle1Against2.IsSplitterFixed = true;
             this.splt_tableTitle1Against2.Location = new System.Drawing.Point(0, 0);
+            this.splt_tableTitle1Against2.Margin = new System.Windows.Forms.Padding(2);
             this.splt_tableTitle1Against2.Name = "splt_tableTitle1Against2";
             // 
             // splt_tableTitle1Against2.Panel1
@@ -351,16 +344,18 @@
             // splt_tableTitle1Against2.Panel2
             // 
             this.splt_tableTitle1Against2.Panel2.Controls.Add(this.lbl_tableTitle);
-            this.splt_tableTitle1Against2.Size = new System.Drawing.Size(315, 50);
+            this.splt_tableTitle1Against2.Size = new System.Drawing.Size(208, 41);
             this.splt_tableTitle1Against2.SplitterDistance = 100;
+            this.splt_tableTitle1Against2.SplitterWidth = 3;
             this.splt_tableTitle1Against2.TabIndex = 0;
             // 
             // btn_saveLayout
             // 
             this.btn_saveLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_saveLayout.Location = new System.Drawing.Point(0, 0);
+            this.btn_saveLayout.Margin = new System.Windows.Forms.Padding(2);
             this.btn_saveLayout.Name = "btn_saveLayout";
-            this.btn_saveLayout.Size = new System.Drawing.Size(100, 50);
+            this.btn_saveLayout.Size = new System.Drawing.Size(100, 41);
             this.btn_saveLayout.TabIndex = 0;
             this.btn_saveLayout.Text = "Save Layout";
             this.btn_saveLayout.UseVisualStyleBackColor = true;
@@ -371,8 +366,9 @@
             this.lbl_tableTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_tableTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tableTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbl_tableTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_tableTitle.Name = "lbl_tableTitle";
-            this.lbl_tableTitle.Size = new System.Drawing.Size(211, 50);
+            this.lbl_tableTitle.Size = new System.Drawing.Size(105, 41);
             this.lbl_tableTitle.TabIndex = 2;
             this.lbl_tableTitle.Text = "X and Y Positions";
             this.lbl_tableTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -380,9 +376,10 @@
             // btn_delLayout
             // 
             this.btn_delLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_delLayout.Location = new System.Drawing.Point(0, 24);
+            this.btn_delLayout.Location = new System.Drawing.Point(0, 21);
+            this.btn_delLayout.Margin = new System.Windows.Forms.Padding(2);
             this.btn_delLayout.Name = "btn_delLayout";
-            this.btn_delLayout.Size = new System.Drawing.Size(126, 26);
+            this.btn_delLayout.Size = new System.Drawing.Size(124, 20);
             this.btn_delLayout.TabIndex = 1;
             this.btn_delLayout.Text = "Delete Layout";
             this.btn_delLayout.UseVisualStyleBackColor = true;
@@ -393,8 +390,9 @@
             this.cBo_layout.Dock = System.Windows.Forms.DockStyle.Top;
             this.cBo_layout.FormattingEnabled = true;
             this.cBo_layout.Location = new System.Drawing.Point(0, 0);
+            this.cBo_layout.Margin = new System.Windows.Forms.Padding(2);
             this.cBo_layout.Name = "cBo_layout";
-            this.cBo_layout.Size = new System.Drawing.Size(126, 24);
+            this.cBo_layout.Size = new System.Drawing.Size(124, 21);
             this.cBo_layout.TabIndex = 0;
             this.cBo_layout.Text = "Choose layout...";
             this.cBo_layout.SelectionChangeCommitted += new System.EventHandler(this.cBo_layout_SelectionChangeCommitted);
@@ -412,20 +410,22 @@
             this.tbl_xAndY.Controls.Add(this.lbl_yValues, 2, 0);
             this.tbl_xAndY.Controls.Add(this.lbl_xValues, 1, 0);
             this.tbl_xAndY.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbl_xAndY.Location = new System.Drawing.Point(0, 75);
+            this.tbl_xAndY.Location = new System.Drawing.Point(0, 61);
+            this.tbl_xAndY.Margin = new System.Windows.Forms.Padding(2);
             this.tbl_xAndY.Name = "tbl_xAndY";
             this.tbl_xAndY.RowCount = 2;
-            this.tbl_xAndY.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tbl_xAndY.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tbl_xAndY.Size = new System.Drawing.Size(445, 365);
+            this.tbl_xAndY.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tbl_xAndY.Size = new System.Drawing.Size(335, 306);
             this.tbl_xAndY.TabIndex = 6;
             // 
             // lbl_repeats
             // 
             this.lbl_repeats.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_repeats.Location = new System.Drawing.Point(270, 0);
+            this.lbl_repeats.Location = new System.Drawing.Point(203, 0);
+            this.lbl_repeats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_repeats.Name = "lbl_repeats";
-            this.lbl_repeats.Size = new System.Drawing.Size(83, 20);
+            this.lbl_repeats.Size = new System.Drawing.Size(63, 16);
             this.lbl_repeats.TabIndex = 4;
             this.lbl_repeats.Text = "Repeats";
             this.lbl_repeats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -433,9 +433,10 @@
             // lbl_yValues
             // 
             this.lbl_yValues.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_yValues.Location = new System.Drawing.Point(181, 0);
+            this.lbl_yValues.Location = new System.Drawing.Point(136, 0);
+            this.lbl_yValues.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_yValues.Name = "lbl_yValues";
-            this.lbl_yValues.Size = new System.Drawing.Size(83, 20);
+            this.lbl_yValues.Size = new System.Drawing.Size(63, 16);
             this.lbl_yValues.TabIndex = 2;
             this.lbl_yValues.Text = "Y Values";
             this.lbl_yValues.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,26 +444,26 @@
             // lbl_xValues
             // 
             this.lbl_xValues.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_xValues.Location = new System.Drawing.Point(92, 0);
+            this.lbl_xValues.Location = new System.Drawing.Point(69, 0);
+            this.lbl_xValues.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_xValues.Name = "lbl_xValues";
-            this.lbl_xValues.Size = new System.Drawing.Size(83, 20);
+            this.lbl_xValues.Size = new System.Drawing.Size(63, 16);
             this.lbl_xValues.TabIndex = 1;
             this.lbl_xValues.Text = "X Values";
             this.lbl_xValues.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(988, 550);
+            this.ClientSize = new System.Drawing.Size(741, 456);
             this.Controls.Add(this.splt_formSplitter);
             this.Controls.Add(this.lbl_Title);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(500, 47);
+            this.MinimumSize = new System.Drawing.Size(379, 45);
             this.Name = "MainForm";
-            this.Padding = new System.Windows.Forms.Padding(67, 0, 67, 20);
+            this.Padding = new System.Windows.Forms.Padding(50, 0, 50, 16);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Autoclicker";
             this.Load += new System.EventHandler(this.Autoclicker_Load);
